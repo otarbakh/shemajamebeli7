@@ -1,6 +1,7 @@
 package com.example.shemajamebeli7.di.repository
 
-import com.example.shemajamebeli7.di.CurrentCoursesVertical
+import com.example.shemajamebeli7.Resource
+import com.example.shemajamebeli7.di.api.CurrentCoursesVertical
 import kotlinx.coroutines.flow.flow
 
 class CurrentCoursesRepositoryImpl(

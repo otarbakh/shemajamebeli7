@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.shemajamebeli7.databinding.SingleHorizontalBinding
 
 class HorizontalAdapter: ListAdapter<Teams.MRdata.ConstructorsTable.Constructor, ConstructorsAdapter.ConstructorsViewHolder>(TeamsDiffCallBack()) {
 
@@ -15,7 +16,7 @@ class HorizontalAdapter: ListAdapter<Teams.MRdata.ConstructorsTable.Constructor,
         parent: ViewGroup, viewType: Int
     ): ConstructorsViewHolder {
         val binding =
-            SingleMovieLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            SingleHorizontalBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ConstructorsViewHolder(binding)
     }
 
@@ -24,7 +25,7 @@ class HorizontalAdapter: ListAdapter<Teams.MRdata.ConstructorsTable.Constructor,
     }
 
 
-    inner class ConstructorsViewHolder(private val binding: SingleMovieLayoutBinding) :
+    inner class ConstructorsViewHolder(private val binding: SingleHorizontalBinding) :
         RecyclerView.ViewHolder(binding.root) {
         private var model: Teams.MRdata.ConstructorsTable.Constructor? = null
         fun bindData() {

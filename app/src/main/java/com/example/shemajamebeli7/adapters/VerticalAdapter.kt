@@ -1,5 +1,13 @@
 package com.example.shemajamebeli7.adapters
 
+import android.annotation.SuppressLint
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.example.shemajamebeli7.databinding.SingleVerticalBinding
+
 class VerticalAdapter: ListAdapter<Teams.MRdata.ConstructorsTable.Constructor, ConstructorsAdapter.ConstructorsViewHolder>(TeamsDiffCallBack()) {
 
 
@@ -7,7 +15,7 @@ class VerticalAdapter: ListAdapter<Teams.MRdata.ConstructorsTable.Constructor, C
         parent: ViewGroup, viewType: Int
     ): ConstructorsViewHolder {
         val binding =
-            SingleMovieLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            SingleVerticalBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ConstructorsViewHolder(binding)
     }
 
@@ -16,7 +24,7 @@ class VerticalAdapter: ListAdapter<Teams.MRdata.ConstructorsTable.Constructor, C
     }
 
 
-    inner class ConstructorsViewHolder(private val binding: SingleMovieLayoutBinding) :
+    inner class ConstructorsViewHolder(private val binding: SingleVerticalBinding) :
         RecyclerView.ViewHolder(binding.root) {
         private var model: Teams.MRdata.ConstructorsTable.Constructor? = null
         fun bindData() {

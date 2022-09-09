@@ -1,5 +1,6 @@
 package com.example.shemajamebeli7.di
 
+import com.example.shemajamebeli7.di.api.CurrentCoursesVertical
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

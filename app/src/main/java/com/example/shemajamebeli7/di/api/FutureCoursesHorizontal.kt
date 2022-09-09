@@ -1,4 +1,4 @@
-package com.example.shemajamebeli7.di
+package com.example.shemajamebeli7.di.api
 
 import com.example.shemajamebeli7.models.NewCourses
 import retrofit2.Response
